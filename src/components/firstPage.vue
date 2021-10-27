@@ -1,11 +1,10 @@
 <template>
 <div>
-  <div>
-    <h1>{{ msg }}</h1>
+  <div class="info">
     <h2>{{ slogan }}</h2>
     <p>{{ about }}</p>
+    <input type="button" value="inquire"/>
   </div>
-   <input type="button" value="inquire"/>
 </div>
 </template>
 
@@ -35,6 +34,14 @@ div{
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  .info{
+    color: white;
+    background: rgba(0,0,0,0.5);
+    h1,h2,h3,h4,h5{
+      text-shadow: 2px 2px black;
+      width: 100%;
+    }    
+  }
 }
 h3 {
   margin: 40px 0 0;
