@@ -3,7 +3,7 @@
     msg="Puget Sound Striping"
     slogan="Prolong, Save, Service"
     about="Puget Sound Striping's goal is to PROLONG the look and functionality of your parking lot, SAVE you money, and to provide you with top tier SERVICE in the process."
-    logo="https://media.istockphoto.com/photos/teamwork-pavement-asphalt-road-marking-paint-and-striping-with-picture-id487565318?s=612x612"
+    logo="assets/background.png"
     />
     <about/>
 </template>
@@ -20,12 +20,13 @@ export default {
   }
 };
 </script>
-
 <style lang="less">
-img{
-  max-width:100%;
+body {
+  margin: 0px !important;
+  padding: 0px !important;
 }
 #app {
+  margin: 0px !important;
   font-family: Tahoma;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

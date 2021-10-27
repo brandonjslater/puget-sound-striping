@@ -1,10 +1,12 @@
 <template>
+<div>
   <div>
     <h1>{{ msg }}</h1>
     <h2>{{ slogan }}</h2>
     <p>{{ about }}</p>
-    <img v-bind:src="logo">
   </div>
+   <input type="button" value="inquire"/>
+</div>
 </template>
 
 <script>
@@ -13,8 +15,7 @@ export default {
   props: {
     msg: String,
     slogan: String,
-    about: String,
-    logo: String
+    about: String
   },
   
 };
@@ -23,8 +24,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 div{
+  background-image: url('../assets/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0px;
+  color: white;
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 h3 {
   margin: 40px 0 0;
