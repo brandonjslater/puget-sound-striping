@@ -38,6 +38,11 @@ body {
   color: #2c3e50;
 }
 div{
-  scroll-margin-top: 111px;
+  scroll-margin-top: 130px;
+}
+@media screen and (min-width: 680px) {
+  div{
+    scroll-margin-top: 111px;
+  }
 }
 </style>

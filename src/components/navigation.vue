@@ -1,12 +1,20 @@
 <template>
   <div class="nav-container">
-    <div class="nav-title">
-      <a href="#Home"><img class="logo" src="../assets/logo.png" /></a>
-      <h1>{{ title }}</h1>
-      <a class="menu" @click="doSomething">
-        <font-awesome-icon icon="bars"></font-awesome-icon>
-      </a>
+    <div class="nav-bar">
+      <div class="nav-logo">
+        <a href="#Home"><img class="logo" src="../assets/logo.png" /></a>
+      </div>
+      <div class="nav-title">
+        <h1>{{ title }}</h1>  
+      </div>
+      <div class="nav-menu">
+        <a class="menu" @click="doSomething">
+          <font-awesome-icon icon="bars"></font-awesome-icon>
+        </a>
+      </div>
+      
     </div>
+
     <ul id="Links"  @click="doSomething">
       <li><a href="#Home">Home</a></li>
       <li><a href="#Contact">Contact</a></li>
@@ -51,31 +59,43 @@ export default {
 .nav-container{
   position: fixed;
   width: 100%;
-  .nav-title {
-    padding: 0.5em;
+  .nav-bar {
+    // padding: 0.5em;
     border-bottom: 10px solid green;
-    display: flex;
+    display: block;
     background: white;
     overflow: hidden;
-    img {
-      max-height: 50px;
-      padding: 1em;
+    .nav-logo {
+      width:25%;
+      float:left;
+      img{
+        max-height: 50px;
+        padding: 1em;
+        float:left;
+      }      
     }
-    h1 {
-      display: inline-flex;
-      color: green;
-      width: 100%;
-      margin-right: 2em;
+    .nav-title{
+      width: 50%;
+      float:left;
+      h1 {
+        color: green;                
+      }
     }
-    .menu {
+    .nav-menu{
       cursor: pointer;
+      float:left;
       display: block;
       position: absolute;
       right: 0;
       top: 0;
-      padding: 1em;
+      padding: 0.75em;
       font-size: 2em;
+      width:25%;
+      .menu {        
+        float:right;
+      }
     }
+    
     
   }
   #Links {
