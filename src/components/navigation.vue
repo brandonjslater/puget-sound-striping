@@ -15,10 +15,10 @@
       
     </div>
 
-    <ul id="Links"  @click="doSomething">
-      <li><a href="#Home">Home</a></li>
-      <li><a href="#Contact">Contact</a></li>
-      <li><a href="#About">About</a></li>
+    <ul id="Links"  @click="toggleNav">
+      <a href="#Home"><li>Home</li></a>
+      <a href="#Contact"><li>Contact</li></a>
+      <a href="#About"><li>About</li></a>
     </ul>
   </div>
 </template>
