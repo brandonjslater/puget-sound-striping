@@ -30,16 +30,17 @@ export default {
 <style scoped lang="less">
 #About{
   height: 100vh;
+  text-align: left;
+  margin:1em;
 }
 
-h3 {
-  margin: 40px 0 0;
+h2 {
+  text-align:center;
 }
 ul {
-  list-style-type: none;
   padding: 0;
 }
 li {
-  margin: 0 10px;
+  margin: 0 2em;
 }
 </style>

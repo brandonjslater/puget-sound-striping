@@ -72,14 +72,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
+@import url("theme.less");
 .nav-container{
   position: fixed;
-  width: 100%;
+  width: 100%;  
   .nav-bar {
-    // padding: 0.5em;
-    border-bottom: 10px solid green;
+    background: @color-white;
+    border-bottom: @big-border;
     display: block;
-    background: white;
     overflow: hidden;
     .nav-logo {
       width:25%;
@@ -94,7 +94,7 @@ export default {
       width: 50%;
       float:left;
       h1 {
-        color: green;                
+        color: @color-green;                
       }
     }
     .nav-menu{
@@ -109,11 +109,13 @@ export default {
       width:25%;
       .menu {        
         float:right;
+        color: @color-green;
       }
     }
     
     
   }
+
   #Links {
       display: none;
       margin: 0px;
@@ -121,10 +123,27 @@ export default {
       background: white;
       list-style: none;
       position: relative;
-      border-bottom: 10px solid green;
-      li {
-        padding: 1em;
+      // border-bottom:@big-border;
+      a:first-child{
+        li{
+          border-top:  @tiny-border;
+        }        
       }
+      a{
+        color: @color-green;
+        text-decoration: none;
+        li{
+          background: @color-white;
+          border-bottom:  @tiny-border;
+          padding: 1em;
+          font-weight: bold;
+        }
+        li:hover{
+          background:@color-light-green;
+        }
+        
+      }
+      
     }
 }
 </style>
