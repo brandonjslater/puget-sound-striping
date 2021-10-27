@@ -27,7 +27,7 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-let nav = {};
+var nav = {};
 
 nav.init = function(){
   nav.collapse();
@@ -45,6 +45,15 @@ nav.collapse = function(){
   document.getElementById("Links").style.display = "none";
 };
 
+nav.toggle = function(){
+  var state = nav.getState();
+    if (state === "none") {
+      nav.expand();
+      return;
+    }
+  nav.collapse();
+}
+
 library.add(faBars);
 window.onload = nav.init;
 
@@ -55,12 +64,7 @@ export default {
   },
   methods: {
     toggleNav() {
-      var state = nav.getState();
-      if (state === "none") {
-        nav.expand();
-        return;
-      }
-      nav.collapse();
+      nav.toggle();
     },
   },
 };
