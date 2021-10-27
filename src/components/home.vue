@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'firstPage',
+  name: 'home',
   props: {
     msg: String,
     slogan: String,
