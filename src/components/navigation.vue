@@ -8,7 +8,7 @@
         <h1>{{ title }}</h1>  
       </div>
       <div class="nav-menu">
-        <a class="menu" @click="doSomething">
+        <a class="menu" @click="toggleNav">
           <font-awesome-icon icon="bars"></font-awesome-icon>
         </a>
       </div>
@@ -27,13 +27,26 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faBars);
+let nav = {};
 
-function init(){
+nav.init = function(){
+  nav.collapse();
+};
+
+nav.getState = function(){
+  return document.getElementById("Links").style.display;
+};
+
+nav.expand = function(){
+  document.getElementById("Links").style.display = "block";
+};
+
+nav.collapse = function(){
   document.getElementById("Links").style.display = "none";
-}
+};
 
-window.onload = init;
+library.add(faBars);
+window.onload = nav.init;
 
 export default {
   name: "navigation",
@@ -41,14 +54,13 @@ export default {
     title: String,
   },
   methods: {
-    doSomething() {
-      var display = document.getElementById("Links").style.display;
-      if (display === "none") {
-        document.getElementById("Links").style.display = "block";
+    toggleNav() {
+      var state = nav.getState();
+      if (state === "none") {
+        nav.expand();
         return;
       }
-
-      document.getElementById("Links").style.display = "none";
+      nav.collapse();
     },
   },
 };
