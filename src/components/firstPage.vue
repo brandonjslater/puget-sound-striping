@@ -23,6 +23,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#Home{
   background-image: url('../assets/background.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,11 +36,8 @@ div{
   color: white;
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   .info{
+    height:100%;
     color: white;
     background: rgba(0,0,0,0.5);
     h1,h2,h3,h4,h5{

@@ -21,6 +21,12 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faBars);
 
+function init(){
+  document.getElementById("Links").style.display = "none";
+}
+
+window.onload = init;
+
 export default {
   name: "navigation",
   props: {
