@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="About">
     <h2>About</h2>
     <p>Jaysen Yoro founded Puget Sound Striping in 2021. With the desire to create and build his own dreams, he decided to go into business for himself. Starting his career as a striper and seal coater, Jaysen has been in the Asphalt and Concrete industry since 2015. He spent three years in the field working and refining his skills as a Striper. He then spent three more years working as an estimator and sales representative before founding Puget Sound Striping.</p>
     <p>We are excited to service the Puget Sound by providing an inexpensive solution for parking lot rejuvenation. Re-striping is one of the easiest ways to to make a faded parking lot pop again! No matter the condition of your parking lot, re-striping is a fast and easy solution to renew your curb appeal and functionality.</p>

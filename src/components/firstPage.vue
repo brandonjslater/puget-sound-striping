@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="Home">
   <div class="info">
     <h2>{{ slogan }}</h2>
     <p>{{ about }}</p>
