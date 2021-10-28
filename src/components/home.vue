@@ -3,7 +3,7 @@
   <div class="info">
     <h2>{{ slogan }}</h2>
     <p>{{ about }}</p>
-    <input type="button" value="inquire"/>
+    <input type="button" value="Contact"/>
   </div>
 </div>
 </template>
@@ -37,12 +37,28 @@ div{
   color: white;
   width: 100%;
   height: 100vh;
+  h2{
+    color: @color-orange;
+  }
   .info{
     height:100%;
     color: white;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.65);
+    input{
+      background: @color-green;
+      border: @tiny-border;
+      border-radius: 30px;
+      width: 75vw;
+      color: white;
+      padding: 1em;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.5em;
+      margin-top:10vh;
+      vertical-align: bottom;
+    }
     h1,h2,h3,h4,h5{
-      text-shadow: 2px 2px black;
+      text-shadow: 2px 2px @color-blue;
       width: 100%;
     }    
   }

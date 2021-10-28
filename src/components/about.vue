@@ -30,14 +30,18 @@ export default {
 <style scoped lang="less">
 @import url("theme.less");
 #About{
-  background: @color-white;
+  background: @color-blue;
+  border-top: @big-border;
+  color: white;
   height: 100vh;
   text-align: left;
   padding:1em;
+  padding-bottom:3em;
 }
 
 h2 {
   text-align:center;
+  color: @color-orange;
 }
 ul {
   padding: 0;

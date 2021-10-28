@@ -7,12 +7,14 @@
     about="Puget Sound Striping's goal is to PROLONG the look and functionality of your parking lot, SAVE you money, and to provide you with top tier SERVICE in the process."
     logo="assets/background.png"
     />
+    <contact/>
     <about/>
 </template>
 
 <script>
 import navigation from './components/navigation.vue';
 import home from './components/home.vue';
+import contact from './components/contact.vue';
 import about from './components/about.vue';
 
 export default {
@@ -20,18 +22,24 @@ export default {
   components: {
     navigation,
     home,
+    contact,
     about
   }
 };
 </script>
 <style lang="less">
+@import url("./components/theme.less");
 body {
   margin: 0px !important;
   padding: 0px !important;
+  background: @color-white;
+}
+h2{
+  color: @color-green;
 }
 #app {
   margin: 0px !important;
-  font-family: Tahoma;
+  font-family: Arial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
