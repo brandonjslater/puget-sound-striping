@@ -2,7 +2,6 @@
 <div id="Home">
   <div class="info">
     <h2>{{ slogan }}</h2>
-    <p>{{ about }}</p>
     <input type="button" value="Contact"/>
   </div>
 </div>
@@ -12,9 +11,7 @@
 export default {
   name: 'home',
   props: {
-    msg: String,
     slogan: String,
-    about: String
   },
   
 };
@@ -39,9 +36,11 @@ div{
   height: 100vh;
   h2{
     color: @color-orange;
+    font-size: 2em;
   }
   .info{
     height:100%;
+    width:100%;
     color: white;
     background: rgba(0,0,0,0.65);
     input{
