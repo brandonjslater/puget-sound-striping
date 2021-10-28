@@ -2,7 +2,7 @@
   <div class="nav-container">
     <div class="nav-bar">
       <div class="nav-logo">
-        <a href="#Home"><img class="logo" src="../assets/logo.png" /></a>
+        <a href="#Home"><img class="logo" src="../assets/logo.svg" /></a>
       </div>
       <div class="nav-title">
         <h1>{{ title }}</h1>  
@@ -82,20 +82,31 @@ export default {
     display: block;
     overflow: hidden;
     .nav-logo {
-      width:25%;
       float:left;
       img{
-        max-height: 50px;
+        height:100%;
+        max-height: 75px;
         padding: 1em;
         float:left;
       }      
     }
     .nav-title{
       width: 50%;
+      height: 100%;
       float:left;
+      text-align: left;
+      vertical-align: middle;
+      
       h1 {
-        color: @color-green;                
+        color: @color-green;
+        
       }
+      @media screen and (min-width: 680px) {
+        h1{
+          margin-top:1.1em;
+        }
+      }
+
     }
     .nav-menu{
       cursor: pointer;
