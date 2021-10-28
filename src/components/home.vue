@@ -2,7 +2,7 @@
 <div id="Home">
   <div class="info">
     <h2>{{ slogan }}</h2>
-    <input type="button" value="Contact"/>
+    <a href="#Contact" class="button button-primary">Contact</a>
   </div>
 </div>
 </template>
@@ -34,6 +34,9 @@ div{
   color: white;
   width: 100%;
   height: 100vh;
+  a{
+    text-decoration: none;
+  }
   h2{
     color: @color-orange;
     font-size: 2em;
@@ -43,19 +46,6 @@ div{
     width:100%;
     color: white;
     background: rgba(0,0,0,0.65);
-    input{
-      background: @color-green;
-      border: @tiny-border;
-      border-radius: 30px;
-      width: 75vw;
-      color: white;
-      padding: 1em;
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 1.5em;
-      margin-top:10vh;
-      vertical-align: bottom;
-    }
     h1,h2,h3,h4,h5{
       text-shadow: 2px 2px @color-blue;
       width: 100%;

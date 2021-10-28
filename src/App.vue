@@ -2,13 +2,19 @@
   <navigation 
     title="Puget Sound Striping"
   />
+
   <home
     slogan="Prolong - Save - Service"
     about="Puget Sound Striping's goal is to PROLONG the look and functionality of your parking lot, SAVE you money, and to provide you with top tier SERVICE in the process."
     logo="assets/background.png"
-    />
-    <contact/>
-    <about/>
+  />
+
+  <contact
+    email="yoro@pugetsoundstriping.com"
+    phone="(360) 632-8947"
+  />
+
+  <about/>
 </template>
 
 <script>
@@ -50,7 +56,7 @@ div{
 }
 @media screen and (min-width: 400px) {
   div{
-    scroll-margin-top: 130px;
+    scroll-margin-top: 120px;
   }
  
 }
