@@ -38,7 +38,7 @@ div{
     text-decoration: none;
   }
   h2{
-    color: @color-orange;
+    color: @brand-primary;
     font-size: 2em;
   }
   .info{
@@ -47,7 +47,7 @@ div{
     color: white;
     background: rgba(0,0,0,0.65);
     h1,h2,h3,h4,h5{
-      text-shadow: 2px 2px @color-blue;
+      text-shadow: 2px 2px black;
       width: 100%;
     }    
   }
