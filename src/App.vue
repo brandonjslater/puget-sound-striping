@@ -38,10 +38,10 @@ export default {
 body {
   margin: 0px !important;
   padding: 0px !important;
-  background: @color-white;
+  background: black;
 }
 h2{
-  color: @color-green;
+  color: @brand-primary;
 }
 #app {
   margin: 0px !important;

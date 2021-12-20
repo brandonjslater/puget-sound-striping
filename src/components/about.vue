@@ -41,7 +41,7 @@
         </p>
       </div>
       <div class="logo">
-        <img alt="Puget Sound Striping Logo" src="../assets/logo.svg" />
+        <img alt="Puget Sound Striping Logo" src="../assets/logo.png" />
       </div>
     </div>
   </div>

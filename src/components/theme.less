@@ -1,11 +1,14 @@
+@brand-primary: #1c79d6;
+@brand-secondary: #9396a2;
+
 @color-green: #226F54;
 @color-blue: #011627;
 @color-orange: #FF8427;
 @color-light-green: #BCD8C1;
 @color-white: rgb(233, 237, 222);
 @border-style:  solid;
-@tiny-border: 1px @border-style @color-green;
-@big-border: 10px @border-style @color-green;
+@tiny-border: 1px @border-style @brand-primary;
+@big-border: 10px @border-style @brand-primary;
 
 .button{
     padding: 1em;
@@ -21,6 +24,6 @@
 
 .button-primary{
     background: @color-green;
-    border: @tiny-border;
+    border: @tiny-border;       
     color: white;
 }

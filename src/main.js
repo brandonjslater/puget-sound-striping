@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import application from './app.vue';
+import application from './App.vue';
 
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";

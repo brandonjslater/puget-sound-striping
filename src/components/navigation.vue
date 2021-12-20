@@ -2,7 +2,7 @@
   <div class="nav-container">
     <div class="nav-bar">
       <div class="nav-logo">
-        <a href="#Home"><img class="logo" src="../assets/logo.svg" /></a>
+        <a href="#Home"><img class="logo" src="../assets/logo.png" /></a>
       </div>
       <div class="nav-title">
         <h1>{{ title }}</h1>  
@@ -77,12 +77,13 @@ export default {
   position: fixed;
   width: 100%;  
   .nav-bar {
-    background: @color-white;
+    background: black;
     border-bottom: @big-border;
-    display: block;
+    display: flex;
     overflow: hidden;
     .nav-logo {
       float:left;
+      max-width: 107px;
       img{
         height:100%;
         max-height: 75px;
@@ -91,14 +92,13 @@ export default {
       }      
     }
     .nav-title{
-      width: 50%;
+      width: 100%;
       height: 100%;
-      float:left;
-      text-align: left;
+      text-align: center;
       vertical-align: middle;
-      
       h1 {
-        color: @color-green;
+        color: @brand-primary;
+        text-align: center;  
         
       }
       @media screen and (min-width: 680px) {
@@ -110,17 +110,13 @@ export default {
     }
     .nav-menu{
       cursor: pointer;
-      float:left;
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 0;
-      padding: 0.75em;
+      display: flex;
+      padding: 1em;
       font-size: 2em;
-      width:25%;
+      text-align: right;
       .menu {        
         float:right;
-        color: @color-green;
+        color: @brand-primary;
       }
     }
     
@@ -141,16 +137,17 @@ export default {
         }        
       }
       a{
-        color: @color-green;
+        color: @brand-primary;
         text-decoration: none;
         li{
-          background: @color-white;
+          background: black;
           border-bottom:  @tiny-border;
           padding: 1em;
           font-weight: bold;
         }
         li:hover{
-          background:@color-light-green;
+          background:@brand-primary;
+          color:black
         }
         
       }
