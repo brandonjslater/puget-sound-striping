@@ -1,7 +1,7 @@
 <template>
   <div id="About">
     <div class="title">
-      <h2>About</h2>
+      <!-- <h2>About</h2> -->
     </div>
     <div class="info-wrapper">
       <div class="info">

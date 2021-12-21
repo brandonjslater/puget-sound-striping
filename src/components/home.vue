@@ -38,8 +38,8 @@ div{
     text-decoration: none;
   }
   h2{
-    color: @brand-primary;
-    font-size: 2em;
+    color: white;
+    font-size: 4em;
   }
   .info{
     height:100%;
