@@ -63,9 +63,9 @@ div {
   align-items: center;
 }
 #About {
-  background: @color-blue;
+  background: white;
   border-top: @big-border;
-  color: white;
+  color: black;
   height: 100%;
   text-align: left;
   padding: 1em;
@@ -76,25 +76,23 @@ div {
   }
   .info-wrapper {
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
     .info,.logo{
       *{
         width: 100%;
         margin: 5px 1em;
       }
     }
-    .info{
-      width:70%
-    }
-    .logo {
-      width: 30%;
+    img{
+      max-width: 30%;
+      margin: 3em;
     }
   }
 }
 
 h2 {
   text-align: center;
-  color: @color-orange;
+  color: @brand-primary;
 }
 ul {
   padding: 0;

@@ -39,12 +39,13 @@ export default {
   margin-top:1em;
 }
 #Contact{
-  background: @color-white;
-  border-top: @big-border;
+  background: @brand-black;
+  // border-top: @big-border;
   height: 100%;
   text-align: left;
   padding:1em;
   padding-bottom:3em;
+  color: white;
 }
 div:not(#Contact){
   display: flex;

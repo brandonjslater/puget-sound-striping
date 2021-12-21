@@ -38,10 +38,18 @@ export default {
 body {
   margin: 0px !important;
   padding: 0px !important;
-  background: black;
+  background: @brand-black;
+  overflow-x: hidden;
 }
 h2{
   color: @brand-primary;
+  font-size: 3em;
+}
+h3{
+  font-size: 2em;
+}
+p,ul{
+  font-size: 1.25em;
 }
 #app {
   margin: 0px !important;
