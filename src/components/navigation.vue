@@ -2,10 +2,11 @@
   <div class="nav-container">
     <div class="nav-bar">
       <div class="nav-logo">
-        <a href="#Home"><img class="logo" src="../assets/logo.png" /></a>
+        <a href="#Home"><img alt="puget sound striping logo" class="logo" src="../assets/icon.png" /></a>
       </div>
       <div class="nav-title">
         <h1>{{ title }}</h1>  
+        <img class="logo" src="../assets/pss.png" />
       </div>
       <div class="nav-menu">
         <a class="menu" @click="toggleNav">
@@ -83,11 +84,11 @@ export default {
     overflow: hidden;
     .nav-logo {
       float:left;
-      max-width: 107px;
+      // max-width: 107px;
       img{
         height:100%;
-        max-height: 75px;
-        padding: 1em;
+        max-height: 90px;
+        margin: 1em;
         float:left;
       }      
     }
@@ -97,9 +98,14 @@ export default {
       text-align: center;
       vertical-align: middle;
       h1 {
-        color: @brand-primary;
-        text-align: center;  
+        display: none;
         
+      }
+      img{
+        // max-width: 90%;
+        margin: 1em;
+        max-height: 90px;
+      
       }
       @media screen and (min-width: 680px) {
         h1{
@@ -112,7 +118,7 @@ export default {
       cursor: pointer;
       display: flex;
       padding: 1em;
-      font-size: 2em;
+      font-size: 2.5em;
       text-align: right;
       .menu {        
         float:right;
@@ -130,6 +136,7 @@ export default {
       background: white;
       list-style: none;
       position: relative;
+      font-size: 2em;
       // border-bottom:@big-border;
       a:first-child{
         li{
