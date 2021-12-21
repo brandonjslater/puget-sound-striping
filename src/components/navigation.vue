@@ -90,29 +90,64 @@ export default {
         max-height: 90px;
         margin: 1em;
         float:left;
-      }      
+        display: none;
+      }   
+      @media screen and (min-width:350px) {
+        img{
+          display: block;
+        }
+      }
     }
     .nav-title{
       width: 100%;
       height: 100%;
-      text-align: center;
-      vertical-align: middle;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       h1 {
         display: none;
         
       }
       img{
-        // max-width: 90%;
-        margin: 1em;
-        max-height: 90px;
-      
+        width: 60%;
+        top:50%;
+        position: absolute;
+        margin: auto;
+        transform: translateY(-50%);
+        margin-left: 2em;
       }
-      @media screen and (min-width: 680px) {
-        h1{
-          margin-top:1.1em;
+      @media screen and (min-width:350px) {
+        img{
+          width: 40%;
+          margin: auto;
         }
       }
-
+      @media screen and (min-width:450px) {
+        img{
+          width: 50%;
+        }
+      }
+      @media screen and (min-width:650px) {
+        img{
+          position: relative;
+          max-height: 75px;
+          transform: translateY(0);
+          top: auto;
+          margin: 1em;
+          width: auto;
+        }
+      }
+      @media screen and (min-width:750px) {
+        img{
+          position: relative;
+          max-height: 90px;
+          transform: translateY(0);
+          top: auto;
+          margin: 1em;
+          width: auto;
+        }
+      }
+      
     }
     .nav-menu{
       cursor: pointer;
