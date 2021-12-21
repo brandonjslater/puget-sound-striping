@@ -4,7 +4,7 @@
   />
 
   <home
-    slogan="Prolong - Save - Service"
+    slogan="Prolong, Save,  Service."
     about="Puget Sound Striping's goal is to PROLONG the look and functionality of your parking lot, SAVE you money, and to provide you with top tier SERVICE in the process."
     logo="assets/background.png"
   />
