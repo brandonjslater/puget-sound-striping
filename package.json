@@ -1,12 +1,14 @@
 {
   "name": "puget-sound-striping",
-  "version": "0.1.0",
+  "version": "1.0.0-beta",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "npm run build && ~/.npm-packages/bin/firebase deploy"
+    "deploy": "npm run build && ~/.npm-packages/bin/firebase deploy",
+    "build-report": "vue-cli-service build --report"
+
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",

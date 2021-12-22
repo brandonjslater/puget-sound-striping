@@ -28,7 +28,7 @@
         <p>
           We are excited to service the Puget Sound by providing an inexpensive
           solution for parking lot rejuvenation. Re-striping is one of the
-          easiest ways to to make a faded parking lot pop again! No matter the
+          easiest ways to make a faded parking lot pop again! No matter the
           condition of your parking lot, re-striping is a fast and easy solution
           to renew your curb appeal and functionality.
         </p>
