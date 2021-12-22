@@ -27,7 +27,7 @@ div{
   align-items: center;
 }
 #Home{
-  background-image: url('../assets/background.png');
+  background-image: url('../assets/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   border: 0px;
